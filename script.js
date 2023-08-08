@@ -5,17 +5,17 @@ const specialCharacters = "!@#$%^&*()";
 var generateBtn = document.getElementById('generate');
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-} 
-/* This line of code made it work but did not make any window prompts 
+// } 
+//This line of code made it work but did not make any window prompts 
 function writePassword() {
   var characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var passwordLength = 12;
+  var passwordLength = prompt("Password Length.");
   var password = "";
 
   for (var index = 0; index < passwordLength; index++) {
@@ -25,13 +25,14 @@ function writePassword() {
   }
   document.getElementById("password").value = password;
 
-} */
+} 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   var passwordLength = prompt("Password Length.");
+  console.log(passwordLength);
   var numbers = confirm("Do you want numbers?");
   var lowerCase = confirm("Do you want lower case letters?");
   var upperCase = confirm("Do you want upper case letters?");
@@ -117,3 +118,13 @@ function generatePassword() {
   return randomPasswordGenerated;
 
 }
+
+/*
+function prompt(message) {
+  var inputField = document.querySelector('#user-input').value;
+
+  return inputField;
+}
+
+var passwordLength = prompt('password length');
+*/
