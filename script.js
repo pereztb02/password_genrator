@@ -1,5 +1,4 @@
-// Assignment code here
-//var password=document.getElementById("password");  --->ignore this
+// variable for special characters
 const specialCharacters = "!@#$%^&*()";
 // Get references to the #generate element
 var generateBtn = document.getElementById('generate');

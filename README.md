@@ -13,4 +13,4 @@ App to genenrate a random password of chosen length and character content.
 ![Screenshot of web application in teh browser.]![(C:\Users\perez\OneDrive\Desktop\class\password_genrator-project\screenshot-of-webpage.png)](screenshot-of-webpage.png)
 
 # Citations
-*Github for starter code
+*Github for starter code: https://github.com/coding-boot-camp/friendly-parakeet
